@@ -1,4 +1,4 @@
-# 🛡️ TP1 – ACL Standard
+# 🛡️ ACL Standard
 
 ## 🎯 Objectif
 
