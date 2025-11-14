@@ -1,0 +1,20 @@
+! Configuration Routeur TP1 ACL Standard
+
+hostname Router
+
+interface FastEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ ip access-group 1 in
+ no shutdown
+
+interface FastEthernet0/1
+ ip address 192.168.2.1 255.255.255.0
+ no shutdown
+
+access-list 1 deny host 192.168.1.7
+access-list 1 permit any
+
+ip access-group 1 in
+
+no ip access-grooup 1 in 
+end
