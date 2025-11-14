@@ -6,7 +6,7 @@ Mettre en œuvre une ACL standard pour **empêcher une machine (192.168.1.7)** d
 
 ---
 
-## 🧱 Topologie du réseau
+##  Topologie du réseau
 
 - **192.168.1.0/24** : PC1 (192.168.1.7), PC3 (192.168.1.8)
 - **192.168.2.0/24** : PC2 (192.168.2.2), Interface routeur (192.168.2.1)
@@ -14,12 +14,12 @@ Mettre en œuvre une ACL standard pour **empêcher une machine (192.168.1.7)** d
   - `fa0/0` : connecté au réseau 1.0
   - `fa0/1` : connecté au réseau 2.0
 
-📷 *Capture 1 – Schéma de la topologie*  
+*Capture 1 – Schéma de la topologie*  
 
 <img width="875" height="313" alt="1" src="https://github.com/user-attachments/assets/e0ff8320-c22d-49d3-b202-b8c5aa962c5c" />
 
 
-## ⚙️ Configuration
+##  Configuration
 
 ### 🔹 Étape 1 : Création de l'ACL
 
@@ -40,7 +40,6 @@ ip access-group 1 in
 
 ---
 
-## ❓ Réponses aux questions
 
 ### Sur quelle interface appliquer l'ACL ? `in` ou `out` ?
 ✅ **Fa0/0 en `in`**. Le trafic vient du réseau 1.0. L’ACL standard filtre uniquement **l’IP source**.
@@ -53,7 +52,7 @@ ip access-group 1 in
 
 ---
 
-## 🧪 Tests et vérifications
+## Tests et vérifications
 
 ### 🔸 Test 1 – Ping depuis 192.168.1.7 vers 192.168.2.2
 📷 *Capture 3 – Ping échoué depuis 1.7 (bloqué)*  
@@ -112,4 +111,4 @@ Ce TP m’a permis de :
 
 ---
 
-> 📁 *Fichier config routeur : [routeur_tp1_config.txt](./config/routeur_tp1_config.txt)*
+> 📁 *Fichier config routeur : [routeur_tp1_config.txt](ACL-STANDARD/routeur_tp1_config.txt)*
