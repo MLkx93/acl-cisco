@@ -14,7 +14,7 @@ Mettre en œuvre une ACL standard pour **empêcher une machine (192.168.1.7)** d
   - `fa0/0` : connecté au réseau 1.0
   - `fa0/1` : connecté au réseau 2.0
 
-📷 *Capture 1 – Schéma de la topologie*
+📷 *Capture 1 – Schéma de la topologie*  
 
 <img width="875" height="313" alt="1" src="https://github.com/user-attachments/assets/e0ff8320-c22d-49d3-b202-b8c5aa962c5c" />
 
@@ -35,7 +35,7 @@ interface fa0/0
 ip access-group 1 in
 ```
 
-📷 *Capture 2 – Configuration de l'ACL*
+📷 *Capture 2 – Configuration de l'ACL*  
 <img width="377" height="85" alt="2" src="https://github.com/user-attachments/assets/e117ebb7-dab8-4cba-bf4b-d6ab68c0f8e5" />
 
 ---
@@ -56,8 +56,8 @@ ip access-group 1 in
 ## 🧪 Tests et vérifications
 
 ### 🔸 Test 1 – Ping depuis 192.168.1.7 vers 192.168.2.2
-📷 *Capture 3 – Ping échoué depuis 1.7 (bloqué)*
-<img width="398" height="239" alt="3" src="https://github.com/user-attachments/assets/afde6a02-d083-4b70-a4ef-843aad203079" />
+📷 *Capture 3 – Ping échoué depuis 1.7 (bloqué)*  
+<img width="398" height="239" alt="3" src="https://github.com/user-attachments/assets/afde6a02-d083-4b70-a4ef-843aad203079" />  
 <img width="359" height="77" alt="Capture d’écran 2025-11-14 233757" src="https://github.com/user-attachments/assets/a98e7952-ba2b-4547-9a6d-58f82f2b6117" />
 
 ```bash
@@ -65,7 +65,7 @@ Reply from 192.168.1.1: Destination host unreachable.
 ```
 
 ### 🔸 Test 2 – Ping depuis 192.168.1.8 vers 192.168.2.1
-📷 *Capture 4 – Ping réussi depuis 1.8*
+📷 *Capture 4 – Ping réussi depuis 1.8*  
 <img width="337" height="131" alt="5" src="https://github.com/user-attachments/assets/918b1a1f-f37a-4c23-8585-e63e9273d7cd" />
 
 ```bash
@@ -73,7 +73,7 @@ Reply from 192.168.2.1: bytes=32 time=1ms TTL=255
 ```
 
 ### 🔸 Vérification de l'ACL
-📷 *Capture 5 – Résultat de `show access-lists`*
+📷 *Capture 5 – Résultat de `show access-lists`*  
 <img width="259" height="86" alt="6" src="https://github.com/user-attachments/assets/7d9270a6-1bec-4fba-88a7-c8062430d88d" />
 
 ```bash
