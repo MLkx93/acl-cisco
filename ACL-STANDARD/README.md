@@ -111,4 +111,4 @@ Ce TP m’a permis de :
 
 ---
 
-> 📁 *Fichier config routeur : [routeur_tp1_config.txt](acl-cisco/ACL-STANDARD/routeur_tp1_config.txt)*
+> 📁 *Fichier config routeur : [routeur_tp1_config.txt](./routeur_tp1_config.txt)*
