@@ -58,6 +58,7 @@ ip access-group 1 in
 ### 🔸 Test 1 – Ping depuis 192.168.1.7 vers 192.168.2.2
 📷 *Capture 3 – Ping échoué depuis 1.7 (bloqué)*
 <img width="398" height="239" alt="3" src="https://github.com/user-attachments/assets/afde6a02-d083-4b70-a4ef-843aad203079" />
+<img width="359" height="77" alt="Capture d’écran 2025-11-14 233757" src="https://github.com/user-attachments/assets/a98e7952-ba2b-4547-9a6d-58f82f2b6117" />
 
 ```bash
 Reply from 192.168.1.1: Destination host unreachable.
@@ -65,7 +66,7 @@ Reply from 192.168.1.1: Destination host unreachable.
 
 ### 🔸 Test 2 – Ping depuis 192.168.1.8 vers 192.168.2.1
 📷 *Capture 4 – Ping réussi depuis 1.8*
-<img width="359" height="77" alt="Capture d’écran 2025-11-14 233757" src="https://github.com/user-attachments/assets/a98e7952-ba2b-4547-9a6d-58f82f2b6117" />
+<img width="337" height="131" alt="5" src="https://github.com/user-attachments/assets/918b1a1f-f37a-4c23-8585-e63e9273d7cd" />
 
 ```bash
 Reply from 192.168.2.1: bytes=32 time=1ms TTL=255
