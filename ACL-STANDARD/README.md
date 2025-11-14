@@ -36,11 +36,7 @@ ip access-group 1 in
 ```
 
 📷 *Capture 2 – Configuration de l'ACL*
-<img width="259" height="86" alt="6" src="https://github.com/user-attachments/assets/eb6dedbf-33e5-4964-89f7-0f7b3e801d2c" />
-<img width="337" height="131" alt="5" src="https://github.com/user-attachments/assets/7219d463-fad2-4fb0-8140-350ec1953648" />
-<img width="377" height="85" alt="2" src="https://github.com/user-attachments/assets/5ade9295-ef8b-44fa-9182-37e7862c24a6" />
-<img width="398" height="239" alt="3" src="https://github.com/user-attachments/assets/a6d0bf74-4430-47d0-9b05-110883438228" />
-<img width="359" height="77" alt="Capture d’écran 2025-11-14 233757" src="https://github.com/user-attachments/assets/9f775354-6804-4d8c-a1de-fbc0ed3a117f" />
+<img width="377" height="85" alt="2" src="https://github.com/user-attachments/assets/e117ebb7-dab8-4cba-bf4b-d6ab68c0f8e5" />
 
 ---
 
@@ -61,6 +57,7 @@ ip access-group 1 in
 
 ### 🔸 Test 1 – Ping depuis 192.168.1.7 vers 192.168.2.2
 📷 *Capture 3 – Ping échoué depuis 1.7 (bloqué)*
+<img width="398" height="239" alt="3" src="https://github.com/user-attachments/assets/afde6a02-d083-4b70-a4ef-843aad203079" />
 
 ```bash
 Reply from 192.168.1.1: Destination host unreachable.
@@ -68,6 +65,7 @@ Reply from 192.168.1.1: Destination host unreachable.
 
 ### 🔸 Test 2 – Ping depuis 192.168.1.8 vers 192.168.2.1
 📷 *Capture 4 – Ping réussi depuis 1.8*
+<img width="359" height="77" alt="Capture d’écran 2025-11-14 233757" src="https://github.com/user-attachments/assets/a98e7952-ba2b-4547-9a6d-58f82f2b6117" />
 
 ```bash
 Reply from 192.168.2.1: bytes=32 time=1ms TTL=255
@@ -75,6 +73,7 @@ Reply from 192.168.2.1: bytes=32 time=1ms TTL=255
 
 ### 🔸 Vérification de l'ACL
 📷 *Capture 5 – Résultat de `show access-lists`*
+<img width="259" height="86" alt="6" src="https://github.com/user-attachments/assets/7d9270a6-1bec-4fba-88a7-c8062430d88d" />
 
 ```bash
 Standard IP access list 1
