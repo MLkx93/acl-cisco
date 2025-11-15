@@ -1,0 +1,18 @@
+! Configuration Routeur TP2 – ACL Étendue
+
+hostname Router
+
+interface FastEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+
+interface FastEthernet0/1
+ ip address 192.168.2.1 255.255.255.0
+ ip access-group filtreExt out
+ no shutdown
+
+ip access-list extended filtreExt
+ deny ip host 192.168.1.8 host 192.168.2.8
+ permit ip any any
+
+end
